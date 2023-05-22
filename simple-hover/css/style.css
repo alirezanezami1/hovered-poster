@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #004b62;
+}
+.poster{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.poster-image{
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.25s;
+}
+.poster:hover .poster-image{
+    opacity: .5;
+}
+.poster-body{
+    position: absolute;
+    inset: 0;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.poster-body::before{
+    content: '';
+    position: absolute;
+    inset: 20px;
+    border: 2px solid #fff;
+    opacity: 0;
+    scale: 1.25;
+    transition: opacity .25s, scale .25s;
+}
+.poster:hover .poster-body::before{
+    opacity: 1;
+    scale: 1;
+}
+.poster-title{
+    opacity: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    translate: -30px ;
+    transition:  opacity .25s, translate .25s;
+}
+.poster-description{
+   font-size: 14px;
+   opacity: 0;
+   translate: -25px ;
+   transition:  opacity .25s, translate .25s;
+}
+.poster:hover .poster-description{
+    opacity: 1;
+    translate: 0;
+} 
+.poster:hover .poster-title{
+    opacity: 1;
+    translate: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
