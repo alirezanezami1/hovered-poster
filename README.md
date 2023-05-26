@@ -1,5 +1,5 @@
 # hovered-poster
-this is a simple hover for figure tag in HTML
+this is a simple hover for figure tag in HTML and CSS
 
 
 
